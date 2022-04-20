@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/job seeker.css">
+    <title>Make Contact Agency</title>
+</head>
+<body>
+    <header class="main-header">
+        <div>
+            <h3>Make Contact Agency</h3>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="title">
+            <h2>Job Seeker | Registration</h2>
+        </div>
+        <form action="" method="post">
+           <input type="text" id="iitd" name="fname" placeholder="Full Name">
+           <input type="text" name="fname" placeholder="name"> 
+           <input type="text" name="field" placeholder="Field">
+            <input type="number" name="cgpa" placeholder="CGPA:" step='.01'>
+            <input type="text" name="sex" placeholder="Sex">
+            <input type="text" name="Education" placeholder='Educational Level'>
+            <input type="text" name="workext" placeholder="Work Experience" >
+
+        
+           <div class="info">
+                <label for="sex">Sex</label>
+                <input list="sex" placeholder="Sex" required>
+				<datalist id="sex">
+                    <option value="male">
+                    <option value="female">
+                 </datalist>
+                <label for="Education">Educational Level</label>
+                <input list="Education"placeholder="Education" required>
+                <datalist id ='Education'>
+                    <option value="Bsc" name='Education'>
+                    <option value="Msc. /MBA." name='Education'>
+                    <option value="Phd" name='Education'>
+                    <option value="Advanced Diploma" name='Education'>
+                </datalist>
+                <label for="language">Language</label>
+                <input type="language" list="Language" placeholder="language" required>
+				<datalist id="Language">
+                    <option value="Ahmaric">
+                    <option value="Afan Oromo">
+                    <option value="Somali">
+                    <option value="Tigrigna">
+                    <option value="Sidama">
+                    <option value="afar">
+                </datalist>
+            </div>
+            <input type="submit" value="submit" name="submit">
+        </form>
+    </div>
+</body>
+</html>

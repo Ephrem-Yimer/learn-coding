@@ -1,0 +1,129 @@
+
+html, body {
+    min-height: 100%;
+    width: 100vw;
+}
+
+body, div, form, input, select, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #eee;
+}
+header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header div{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+header div h3{
+    margin: 2px;
+}
+
+.left-part .left-part-1 h1, .left-part .left-part-2 h1{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+form .title h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 0 8px;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.left-part, form {
+    padding: 25px;
+}
+
+.left-part {
+    text-align: center;
+    width: 60%;
+}
+.left-part .left-part-1{
+    margin-bottom: 10px;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    border: none;
+    background: #26a9e0; 
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    width: 100%;
+}
+
+button:hover{
+    background: #85d6de;
+}
+#contact-p{
+    font-size: 20px;
+}
+/* responsive design */
+@media (min-width: 568px) {
+html, body {
+height: 100%;
+}
+.main-block {
+flex-direction: row;
+height: calc(100% - 50px);
+}
+.left-part, form {
+flex: 1;
+height: auto;
+}
+}

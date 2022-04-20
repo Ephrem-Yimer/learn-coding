@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/company.css">
+    <title>Make Contact Agency</title>
+</head>
+<body>
+    <header class="main-header">
+        <div>
+            <h3>Make Contact Agency</h3>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                <li></i><a href="/#about-us"><i class="fas fa-book-open"></i> About</a></li>
+                <li><a href="/login"><i class="fas fa-user"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="title">
+            <h2>Company's Candidate Requirment</h2>
+        </div>
+
+        <form action="/home" method="post">
+            <input type="text" name="companyname" placeholder="Company Name" required>
+            <input type="text" name="Field" placeholder="Field" required>
+            <input type="number" name="cgpa" placeholder="Candidate minimum CGPA" min='0' max='4' step=".01">
+            <input type="text" name="sex" placeholder="sex" required>
+			<label for="Deadline">Deadline</label>
+            <input type="date" name="deadline" placeholder="Deadline" required>
+            <input type="text" name="salary" placeholder="Salary" required>
+            <input type="text" name="workext" placeholder="Work Experience" >
+
+            <input type="text" name="Education" placeholder='Bsc/Msc'><br>
+
+            <input type="submit" value="submit" name="submit">
+
+        </form>
+    </div>
+    
+</body>
+</html>
